@@ -1,0 +1,43 @@
+.pokemon-card {
+  font-family: "Signika", arial, sans-serif;
+  width: 100%;
+
+  &:hover {
+    margin-top: -3px;
+    transition: margin-top 0.05s;
+  }
+
+  &-image {
+    background: #f2f2f2;
+    border-radius: 8px;
+
+    padding: 1rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-title {
+    margin: 0 .625rem;
+  }
+
+  &-number {
+    color: #919191;
+    font-size: 80%;
+    margin-top: 6px;
+    margin-bottom: 1rem;
+  }
+
+  &-name {
+    font-size: 1.5rem;
+  }
+
+  &-types {
+    display: flex;
+    margin-top: 4px;
+    margin-left: 10px;
+    justify-items: flex-start;
+    gap: .25rem;
+  }
+}
