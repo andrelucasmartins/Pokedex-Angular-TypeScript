@@ -1,0 +1,41 @@
+// @function bg-color($value) {
+
+  //   @if $bg-color =='white' or $bg-color =='green' {
+    //     @return(color: var(--color-black));
+    //   }
+
+//   @if $bg-color =='black' {
+
+//     @return (color: var(--color-white))
+//   }
+
+//   @else {
+//     @return (color: var(--color-white))
+//   }
+
+//   @return(
+  //     background: var(--color-#{$bg-color}),
+  //     color: var(--color-white)
+  //     )
+  // }
+
+@function get-bg-color($value) {
+  @if $value =='white' or $value =='green' {
+
+    @return (
+      background: var(--color-#{$value}),
+      color: var(--color-black)
+    );
+  }
+
+  @return(
+    background: var(--color-#{$value}),
+    color: var(--color-white)
+  )
+}
+
+// Export the function
+
+@export 'get-bg-color';
+
+// @export 'bg-color';

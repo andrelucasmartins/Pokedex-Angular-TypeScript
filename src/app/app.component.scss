@@ -6,3 +6,18 @@
 .main-container {
   padding: 2rem 0;
 }
+
+@function get-bg-color($value) {
+  @if $value =='white' or $value =='green' {
+
+    @return (
+      background-color: var(--color-#{$value}),
+      color: var(--color-black)
+      );
+  }
+
+  @return(
+    background-color: var(--color-#{$value}),
+    color: var(--color-white)
+    )
+}
